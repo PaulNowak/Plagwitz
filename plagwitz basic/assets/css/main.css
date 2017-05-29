@@ -1296,9 +1296,11 @@
 					line-height: 2.75rem;
 					padding: 0 1.25rem 0 1.45rem;
 					text-transform: uppercase;
-					letter-spacing: 0.2rem;
+					letter-spacing: 0.21rem;
 					font-size: 0.8rem;
 					border-bottom: 0;
+					text-align: center;
+					
 				}
 
 					#header nav ul li a:hover {
@@ -1477,13 +1479,13 @@
 			transition: opacity 0.325s ease-in-out, transform 0.325s ease-in-out;
 			padding: 4.5rem 2.5rem 1.5rem 2.5rem ;
 			position: relative;
-			width: 40rem;
+			width: 55rem;
 			max-width: 100%;
 			background-color: rgba(27, 31, 34, 0.85);
 			border-radius: 4px;
 			opacity: 0;
 		}
-
+		
 			#main article.active {
 				-moz-transform: translateY(0);
 				-webkit-transform: translateY(0);
@@ -1512,7 +1514,7 @@
 					transition: background-color 0.2s ease-in-out;
 					content: '';
 					display: block;
-					position: absolute;
+					position: relative;
 					top: 0.75rem;
 					left: 0.75rem;
 					width: 2.5rem;
@@ -1592,3 +1594,120 @@
 		body.is-loading #footer {
 			opacity: 0;
 		}
+/* Bars und Restaurants */
+
+	#hungry   {
+		width: 10em;
+		margin-right: 5px;
+		float:right;
+	}
+	#barsRest nav {
+		float: left;
+		font-size: 0,9em;
+		padding: 0;
+		background: #fffbf0;
+		border-color: #e7c157;
+	}
+		#barsRest nav ul {
+			display: -moz-flex;
+			display: -webkit-flex;
+			display: -ms-flex;
+			display: flex;
+			margin-bottom: 0;
+			list-style: none;
+			padding: 0;
+			border: solid 1px #ffffff;
+			border-radius: 4px;
+		}
+
+			#barsRest nav ul li {
+				padding-left: 0;
+				border-left: solid 1px #ffffff;
+				list-style: none;
+				margin: 0;
+				padding: .em;
+				
+			}
+
+				#barsRest nav ul li:first-child {
+					border-left: 0;
+				}
+
+				#barsRest nav ul li a {
+					display: block;
+					min-width: 12.35rem;
+					height: 2.75rem;
+					line-height: 2.75rem;
+					text-transform: uppercase;
+					letter-spacing: 0.21rem;
+					font-size: 0.8rem;
+					border-bottom: 0;
+					text-align: center;
+					padding: 0.2em 10px;
+					font-weight: bold;
+					text-decoration: none;
+					background-color: grey;
+					color: white;
+					
+				}
+
+					#barsRest nav ul li a:hover {
+						background-color: rgba(100, 2, 2, 75);
+					}
+
+					#barsRest nav ul li a:active {
+						background-color: rgba(255, 255, 255, 0.175);
+					}
+/* Restaurants */
+	#Rest ul{
+  list-style:none;
+  list-style: none;
+   margin: 20px auto;
+   padding:0
+}
+
+#Rest ul li{
+  padding:1px;
+}
+#alpha img{
+	position: right;
+}
+#Rest nav ul li a {
+					display: block;
+					min-width:10rem;
+					height: 2.75rem;
+					line-height: 2.75rem;
+					padding: 0 1.25rem 0 1.45rem;
+					text-transform: uppercase;
+					letter-spacing: 0.21rem;
+					font-size: 0.8rem;
+					border-bottom: 0;
+					text-align: left;
+					color: white;
+}
+
+#Rest nav ul li a p {
+					display: block;
+					min-width: 3rem;
+					height: 2.75rem;
+					line-height: 2.75rem;
+					padding: 0 1.25rem 0 1.45rem;
+					text-transform: uppercase;
+					letter-spacing: 0.21rem;
+					font-size: 0.8rem;
+					border-bottom: 0;
+					text-align: right;
+					
+}
+
+.imgcon {
+    width: 300px;
+    height: 180px;
+}
+
+/* resize images */
+.imgcon img {
+    width: 100%;
+    height: auto;
+	float: right;
+}

@@ -1,3 +1,5 @@
+
+
 <!DOCTYPE HTML>
 <!--
 	Dimension by HTML5 UP
@@ -9,9 +11,16 @@
 		<title>Dimension by HTML5 UP</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		 <!-- Bootstrap core CSS -->
+		<link href="assets/css/bootstrap.min.css" rel="stylesheet">
 		<link rel="stylesheet" href="assets/css/main.css" />
+		<link href="assets/css/album.css" rel="stylesheet">
 		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<link rel="stylesheet" href="https://cdn.rawgit.com/stevenmonson/googleReviews/6e8f0d79/google-places.css">
+									<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+									<script src="https://cdn.rawgit.com/stevenmonson/googleReviews/6e8f0d79/google-places.js"></script>
+									<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&key=AIzaSyC2fMEMuEPYcktMmZei-LVTqfRE1_NMyqQ&signed_in=true&libraries=places"></script>
 	</head>
 	<body>
 
@@ -26,16 +35,16 @@
 						<div class="content">
 							<div class="inner">
 								<h1>Plagwitz</h1>
-								<p>A fully responsive site template designed by <a href="https://html5up.net">HTML5 UP</a> and released<br />
-								for free under the <a href="https://html5up.net/license">Creative Commons</a> license.</p>
+								<p>Plagwitz - schönster Stadtteil in Leipzig!</p>
 							</div>
 						</div>
 						<nav>
 							<ul>
 								<li><a href="#intro">Intro</a></li>
-								<li><a href="#work">Work</a></li>
 								<li><a href="#ausgehen">Ausgehen</a></li>
-								<li><a href="#contact">Contact</a></li>
+								<li><a href="#barsRest">Bars & Restaurants</a></li>
+								<li><a href="#vereine">Vereine</a></li>
+								<li><a href="#contact">Kontakt</a></li>
 								<!--<li><a href="#elements">Elements</a></li>-->
 							</ul>
 						</nav>
@@ -52,78 +61,564 @@
 								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis dapibus rutrum facilisis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Etiam tristique libero eu nibh porttitor fermentum. Nullam venenatis erat id vehicula viverra. Nunc ultrices eros ut ultricies condimentum. Mauris risus lacus, blandit sit amet venenatis non, bibendum vitae dolor. Nunc lorem mauris, fringilla in aliquam at, euismod in lectus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. In non lorem sit amet elit placerat maximus. Pellentesque aliquam maximus risus, vel sed vehicula.</p>
 							</article>
 
-						<!-- Work -->
-							<article id="work">
-								<h2 class="major">Work</h2>
-								<span class="image main"><img src="images/pic02.jpg" alt="" /></span>
-								<p>Adipiscing magna sed dolor elit. Praesent eleifend dignissim arcu, at eleifend sapien imperdiet ac. Aliquam erat volutpat. Praesent urna nisi, fringila lorem et vehicula lacinia quam. Integer sollicitudin mauris nec lorem luctus ultrices.</p>
-								<p>Nullam et orci eu lorem consequat tincidunt vivamus et sagittis libero. Mauris aliquet magna magna sed nunc rhoncus pharetra. Pellentesque condimentum sem. In efficitur ligula tate urna. Maecenas laoreet massa vel lacinia pellentesque lorem ipsum dolor. Nullam et orci eu lorem consequat tincidunt. Vivamus et sagittis libero. Mauris aliquet magna magna sed nunc rhoncus amet feugiat tempus.</p>
-							</article>
-
-						<!-- Ausgehen -->
-							<article id="ausgehen">
-								<h2 class="major">Ausgehen</h2>
-								<span class="image main"><img src="images/pic03.jpg" alt="" /></span>
-								<p>In Plagwitz ist Ausgehen ganz wunderbar möglich. Um in geselliger Runde den Durst zu löschen oder bis zum Morgengrauen zum Takt der Musik zu tanzen, Plagwitz bietet immer den passenden Ort.</p>
-						<nav>
-							<ul>
-								<li><a href="#damenhandschuhfabrik">Alte Damenhandschuhfabrik</a></li>
-								<li><a href="#elipamanoke">Elipamanoke</a></li>
-								<li><a href="#seltsam">Dr. Seltsam</a></li>
-								<!--<li><a href="#elements">Elements</a></li>-->
-							</ul>
-						</nav>
-							</article>
-						
-						<article id="damenhandschuhfabrik">
-								<h2 class="major">Alte Damenhandschuhfabrik</h2>
-								<span class="image main"><img src="http://www.frohfroh.de/wp-content/uploads/2014/06/Distillery-Nachtflohmarkt.jpg" alt="" /></span>
-								<p>Toll zum Feiern.</p>
-								<p>Yai.</p>
-						</article>
-						
-						<article id="elipamanoke">
-								<h2 class="major">Elipamanoke</h2>
-								<span class="image main"><img src="https://pbs.twimg.com/media/B5PHBv-CUAAcRfs.jpg" alt="" /></span>
-								<p>Toll zum Tanzen.</p>
-								<p>Juhuu.</p>
-						</article>
-						
-						<article id="seltsam">
-								<h2 class="major">Dr.Seltsam</h2>
-								<span class="image main"><img src="http://www.leipzig.travel/blog/wp-content/uploads/2016/08/DSC_1272.jpg" alt="" /></span>
-								<p>Toll zum Reden.</p>
-								<p>Yeah.</p>
-						</article>
-						
-
-						<!-- Contact -->
-							<article id="contact">
-								<h2 class="major">Contact</h2>
-								<form method="post" action="#">
-									<div class="field half first">
-										<label for="name">Name</label>
-										<input type="text" name="name" id="name" />
-									</div>
-									<div class="field half">
-										<label for="email">Email</label>
-										<input type="text" name="email" id="email" />
-									</div>
-									<div class="field">
-										<label for="message">Message</label>
-										<textarea name="message" id="message" rows="4"></textarea>
-									</div>
-									<ul class="actions">
-										<li><input type="submit" value="Send Message" class="special" /></li>
-										<li><input type="reset" value="Reset" /></li>
-									</ul>
-								</form>
-								<ul class="icons">
-									<li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
-									<li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
-									<li><a href="#" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
-									<li><a href="#" class="icon fa-github"><span class="label">GitHub</span></a></li>
+							<!-- Ausgehen -->
+								<article id="ausgehen">
+									<h2 class="major">Ausgehen</h2>
+									<span class="image main"><img src="images/pic03.jpg" alt="" /></span>
+									<p>In Plagwitz ist Ausgehen ganz wunderbar möglich. Um in geselliger Runde den Durst zu löschen oder bis zum Morgengrauen zum Takt der Musik zu tanzen, Plagwitz bietet immer den passenden Ort.</p>
+							<nav>
+								<ul>
+									<li><a href="#damenhandschuhfabrik">Alte Damenhandschuhfabrik</a></li>
+									<li><a href="#elipamanoke">Elipamanoke</a></li>
+									<li><a href="#seltsam">Dr. Seltsam</a></li>
+									<!--<li><a href="#elements">Elements</a></li>-->
 								</ul>
+							</nav>
+								</article>
+
+							<article id="damenhandschuhfabrik">
+									<h2 class="major">Alte Damenhandschuhfabrik</h2>
+									<span class="image main"><img src="http://www.frohfroh.de/wp-content/uploads/2014/06/Distillery-Nachtflohmarkt.jpg" alt="" /></span>
+									<p>Toll zum Feiern.</p>
+									<p>Yai.</p>
+							</article>
+
+							<article id="elipamanoke">
+									<h2 class="major">Elipamanoke</h2>
+									<span class="image main"><img src="https://pbs.twimg.com/media/B5PHBv-CUAAcRfs.jpg" alt="" /></span>
+									<p>Toll zum Tanzen.</p>
+									<p>Juhuu.</p>
+							</article>
+
+							<article id="seltsam">
+									<h2 class="major">Dr.Seltsam</h2>
+									<span class="image main"><img src="http://www.leipzig.travel/blog/wp-content/uploads/2016/08/DSC_1272.jpg" alt="" /></span>
+									<p>Toll zum Reden.</p>
+									<p>Yeah.</p>
+							</article>
+
+						<!-- Bars & Restaurants -->
+						<article id="barsRest">
+								<h2 class="major">Bars & Restaurants</h2>
+								<span class="image main"><img src="images/Bar Seventy1.jpg" alt="Bar Seventy" title="Bar Seventy"/></span>
+								<nav>
+									<ul>
+										<li><a href="#bars">Bars</a></li>
+										<li><a href="#Rest">Restaurants</a></li>
+										<li><a href="#Imbiss">Imbiss</a><li>
+									</ul>
+								</nav>
+								<img id="hungry" src="images/hungry.png" alt="You hungry?!"/>
+							</article>
+							
+						<!-- Bars -->
+							<article id="bars" >
+								<h2 class="major">Bars</h2>
+								<div class="row-fluid">
+									<div id="Dr. Seltsam">
+										<div class="col-xs-8">
+											<a href="http://seltsam-leipzig.com/"> <h3 id="firmen" class="col-xs-9">Dr. Seltsam</h3> </a>
+											<img id="sterne" class="col-xs-3" src="images/Stern 4.png" height= "35rem" width="auto"/>
+											<a class="imgcon" href="http://seltsam-leipzig.com/"><img src="images/2_seltsam__1000.jpg" title="Zur Website" alt="Dr. Seltsam" height="300rem" width="auto"></a>
+										
+											<p id="bildunterschrift" class="col-xs-12"> "Bikeshop - Bar -  Nightlife"</p>	 
+									</div>
+										
+										<div class="col-xs-4">
+											<div id="drs"></div>
+												<script>
+												jQuery(document).ready(function( $ ) {
+												   $("#drs").googlePlaces({
+														placeId: 'ChIJ4ckczaH3pkcR7TMleF-iz-o' //Find placeID @: https://developers.google.com/places/place-id
+													  , render: ['reviews']
+													  , min_rating: 4
+													  , max_rows:1
+												   });
+												});
+												</script>
+										</div>
+										<p class="col-xs-4"><a href="https://www.google.de/search?q=bars+plagwitz&oq=bars+plagwitz&aqs=chrome..69i57j69i60l3j0.4336j0j7&sourceid=chrome&ie=UTF-8#q=bars+plagwitz&rflfq=1&rlha=0&rllag=51328097,12332173,337&tbm=lcl&rldimm=16919920855975539693&tbs=lrf:!2m1!1e2!2m1!1e3!3sEAE,lf:1,lf_ui:9&lrd=0x47a6f7a1cd1cc9e1:0xeacfa25f782533ed,1,">Alle Bewertungen ansehen</a></p>  
+										<p id="adr" class="col-xs-8">
+											<u>Adresse:</u> Merseburger Str. 25, 04229 Leipzig</br>	
+											<u>Telefon:</u> 01578 7583441
+										</p>
+										<p id="adr" class="col-xs-4">
+											<u>Öffnungszeiten:</u></br> Mo - Fr 11.00 - 05.00 Uhr <br> Sa 12.00 - 05.00 Uhr <br> So 18.00 - 03.00 Uhr</p>
+									</div>
+									<div id="Noch Besser Leben">
+										<div class="col-xs-8">
+											<a href="http://www.nochbesserleben.com/"> <h3 id="firmen" class="col-xs-9">Noch Besser Leben</h3> </a>
+											<img id="sterne" class="col-xs-3" src="images/Stern 4.png" height= "35rem" width="auto"/>
+											<a class="imgcon" href="http://www.nochbesserleben.com/"><img src="images/noch_besser_leben.jpg" title="Zur Website" alt="Dr. Seltsam" height="300rem" width="auto"></a>
+										
+											<p  id="bildunterschrift" class="col-xs-12">"Die Kneipe ist eine Institution und bietet Fingerfood, Biere sowie Kulturveranstaltungen und sonntags Tatort."</p>	 
+										</div>
+										
+										<div class="col-xs-4">
+											<div id="nbl"></div>
+												<script>
+												jQuery(document).ready(function( $ ) {
+												   $("#nbl").googlePlaces({
+														placeId: 'ChIJG8T5zKH3pkcRoe89C5j4jgE' //Find placeID @: https://developers.google.com/places/place-id
+													  , render: ['reviews']
+													  , min_rating: 4
+													  , max_rows:1
+												   });
+												});
+												</script>
+										</div>
+										<p class="col-xs-4"><a href="https://www.google.de/search?q=bars+plagwitz&oq=bars+plagwitz&aqs=chrome..69i57j69i60l3j0.4336j0j7&sourceid=chrome&ie=UTF-8#q=bars+plagwitz&rflfq=1&rlha=0&rllag=51328097,12332173,337&tbm=lcl&rldimm=16919920855975539693&tbs=lrf:!2m1!1e2!2m1!1e3!3sEAE,lf:1,lf_ui:9&lrd=0x47a6f7a1cd1cc9e1:0xeacfa25f782533ed,1,">Alle Bewertungen ansehen</a></p>  
+										<p id="adr" class="col-xs-8">
+											<u>Adresse:</u> Merseburger Str. 25, 04229 Leipzig</br>	
+											<u>Telefon:</u> 0341 9757330
+										</p>
+										<p id="adr" class="col-xs-4">
+											<u>Öffnungszeiten:</u></br>  Mo - So ab 16.30 Uhr </p>
+									</div>
+									<div id="elipamanoke">
+										<div class="col-xs-8">
+											<a href="http://www.elipamanoke.de/"> <h3 id="firmen" class="col-xs-9">elipamanoke</h3> </a>
+											<img id="sterne" class="col-xs-3" src="images/Stern 4.png" height= "35rem" width="auto"/>
+											<a class="imgcon" href="http://www.elipamanoke.de/"><img src="images/elicontrol_with_dj_hell_-_elipamanoke-elipamanoke-0005.jpg" title="Zur Website" alt="elipamanoke" height="300rem" width="auto"></a>
+										
+											<p  id="bildunterschrift" class="col-xs-12"> "Die Kulturlounge bietet Live-Acts, Szenekunst und überwiegend elektronische Beats in industrieller Atmosphäre."</p>	 
+											<p id="adr" class="col-xs-12">
+												<u>Adresse:</u> Markranstädter Str. 4, 04229 Leipzig</br>	
+												<u>Telefon:</u>
+											</p>
+											<p id="adr" class="col-xs-12">
+											<u>Öffnungszeiten:</u></br> Fr und Sa 21.00 - 05.00 Uhr</p>
+								</div>
+										
+										<div class="col-xs-4">
+											<div id="eli"></div>
+												<script>
+												jQuery(document).ready(function( $ ) {
+												   $("#eli").googlePlaces({
+														placeId: 'ChIJMcbqfXX3pkcRaBJ-soqzLFk' //Find placeID @: https://developers.google.com/places/place-id
+													  , render: ['reviews']
+													  , min_rating: 4
+													  , max_rows:1
+												   });
+												});
+												</script>
+											<p ><a href="https://www.google.de/search?q=bars+plagwitz&oq=bars+plagwitz&aqs=chrome..69i57j69i60l3j0.4336j0j7&sourceid=chrome&ie=UTF-8#q=bars+plagwitz&rflfq=1&rlha=0&rllag=51328097,12332173,337&tbm=lcl&rldimm=16919920855975539693&tbs=lrf:!2m1!1e2!2m1!1e3!3sEAE,lf:1,lf_ui:9&lrd=0x47a6f7757deac631:0x592cb38ab27e1268,1,&rlfi=hd:;si:6425708176632320616;mv:!1m3!1d5765.312312152504!2d12.336470849999998!3d51.3275315!2m3!1f0!2f0!3f0!3m2!1i262!2i222!4f13.1;tbs:lrf:!2m1!1e2!2m1!1e3!3sEAE,lf:1,lf_ui:9">Alle Bewertungen ansehen</a></p>  
+										
+										</div>
+										
+									</div>
+										<div id="Tante Rosi ">
+										<div class="col-xs-8">
+											<a href="http://www.tanterosileipzig.de/"> <h3 id="firmen" class="col-xs-9">Tante Rosi </h3> </a>
+											<img id="sterne" class="col-xs-3" src="images/Stern 4.png" height= "35rem" width="auto"/>
+											<a class="imgcon" href="http://www.tanterosileipzig.de/"><img  src="images/Tanterosi_webseite_kommplett.png" title="Zur Website" alt="Tante Rosi" height="300px" width="auto"></a>
+										
+											<p  id="bildunterschrift" class="col-xs-12"> "Schritt für Schritt wächst Tante Rosi zur neuen Kneipe im Kiez.
+												</br>Wenn noch nicht alles perfekt ist, wir arbeiten daran!"</p>	 
+											<p id="adr" class="col-xs-12">
+												<u>Adresse:</u> Erich-Zeigner-Allee 49, 04229 Leipzig</br>	
+												<u>Telefon:</u> 0177 8796165
+											</p>
+											<p id="adr" class="col-xs-12">
+											<u>Öffnungszeiten:</u></br> Mo - Sa 18.00 - 02.00 Uhr </br>
+												So 18.00 - 00.00 Uhr
+												</p>
+										</div>
+										
+										<div class="col-xs-4">
+											<div id="rosi"></div>
+												<script>
+												jQuery(document).ready(function( $ ) {
+												   $("#rosi").googlePlaces({
+														placeId: 'ChIJrbHA7HX3pkcRkR-5Qa12ir8' //Find placeID @: https://developers.google.com/places/place-id
+													  , render: ['reviews']
+													  , min_rating: 4
+													  , max_rows:1
+												   });
+												});
+												</script>
+											<p ><a href="https://www.google.de/search?q=bars+plagwitz&oq=bars+plagwitz&aqs=chrome..69i57j69i60l3j0.4336j0j7&sourceid=chrome&ie=UTF-8#q=bars+plagwitz&rflfq=1&rlha=0&rllag=51328097,12332173,337&tbm=lcl&rldimm=16919920855975539693&tbs=lrf:!2m1!1e2!2m1!1e3!3sEAE,lf:1,lf_ui:9&lrd=0x47a6f775ecc0b1ad:0xbf8a76ad41b91f91,1,&rlfi=hd:;si:13801974494534377361;mv:!1m3!1d5765.312312152504!2d12.336470849999998!3d51.3275315!2m3!1f0!2f0!3f0!3m2!1i262!2i222!4f13.1;tbs:lrf:!2m1!1e2!2m1!1e3!3sEAE,lf:1,lf_ui:9">Alle Bewertungen ansehen</a></p>  
+										
+										</div>
+										</div>
+									<div id="Prellbock das Restaurant">
+										<div class="col-xs-8">
+											<a href="http://www.prellbock-leipzig-online.de/"> <h3 id="firmen" class="col-xs-9">Prellbock das Restaurant</h3> </a>
+											<img id="sterne" class="col-xs-3" src="images/Stern 4.png" height= "35rem" width="auto"/>
+											<a lass="imgcon" href="http://www.prellbock-leipzig-online.de/"><img src="images/151-1.jpg" title="Zur Website" alt="Prellbock" height="300rem" width="auto"></a>
+										
+											<p  id="bildunterschrift" class="col-xs-12"> "Frühstück, Wraps oder Schnitzel in stimmungsvollem Lokal auf 2 Etagen und im Hof einer ehemaligen Garnfabrik."</p>	 
+											<p id="adr" class="col-xs-12">
+												<u>Adresse:</u> Nonnenstraße 42, 04229 Leipzig</br>	
+												<u>Telefon:</u>0341 4791784
+											</p>
+											<p id="adr" class="col-xs-12">
+											<u>Öffnungszeiten:</u></br> Montag bis Freitag 11.00 - 00.00 Uhr </br>
+												Sa/So 10.00 - 00.00 Uhr
+												</p>
+											</div>
+										
+										<div class="col-xs-4">
+											<div id="pb"></div>
+												<script>
+												jQuery(document).ready(function( $ ) {
+												   $("#pb").googlePlaces({
+														placeId: 'ChIJyx_MAHb3pkcRbBROEkhbMTg' //Find placeID @: https://developers.google.com/places/place-id
+													  , render: ['reviews']
+													  , min_rating: 4
+													  , max_rows:1
+												   });
+												});
+												</script>
+											<p ><a href="https://www.google.de/search?q=prellbock+leipzig&oq=prell&aqs=chrome.3.69i57j69i60j0l3j35i39.7631j0j4&sourceid=chrome&ie=UTF-8#lrd=0x47a6f77600cc1fcb:0x38315b48124e146c,1,">Alle Bewertungen ansehen</a></p>  
+										
+										</div>
+									</div>
+										
+								</div>
+			
+							</article>
+							<!-- Restaurants -->
+							<article id="Rest">
+								<h2 class="major">Restaurants</h2>
+								<div class="row-fluid">
+									<div id="Chinabrenner">
+										<div class="col-xs-8">
+											<a href="http://www.chinabrenner.de/"> <h3 id="firmen" class="col-xs-9">Chinabrenner</h3> </a>
+											<p id="adr" class="col-xs-7">Adresse: Gießerstraße 18, 04229 Leipzig</p>
+											<a href="http://www.chinabrenner.de/"><img src="images/Blog-Chinabrenner-Raum.jpg" title="Zur Website" alt="Chinabrenner" height="300rem" width="auto"></a>
+										
+											<p class="card-text"> "Klassische Gerichte aus der chinesischen Provinz Sichuan im quirligen, an eine Garküche angelehnten Ambiente."</p>	 
+											<p class="col-xs-6"><a href="https://www.google.de/search?q=import+rating+from+google&oq=import+rating+from+google&aqs=chrome..69i57.9367j0j7&sourceid=chrome&ie=UTF-8#q=restaurants+plagwitz&rflfq=1&rlha=0&rllag=51328152,12331872,321&tbm=lcl&rldimm=17078255806350877745&tbs=lrf:!2m1!1e2!2m1!1e3!3sEAE,lf:1,lf_ui:9&lrd=0x47a6f70a6a7ea577:0xf0bad02b61637c6a,1,&rlfi=hd:;si:17346405799506967658;mv:!1m3!1d6271.8757727100665!2d12.33607535!3d51.326428199999995!2m3!1f0!2f0!3f0!3m2!1i544!2i483!4f13.1;tbs:lrf:!2m1!1e2!2m1!1e3!3sEAE,lf:1,lf_ui:9">Alle Bewertungen ansehen</a></p>  
+											<img id="sterne" class="col-xs-4" src="images/Stern 4.png" height= "35rem" width="auto"/>
+											<p class="col-xs-12"> Öffnungszeiten: Mo 12.00 - 15.00 Uhr, Di/Do/Fr 12.00 - 23.00 Uhr, Sa 18.00 - 23.00 Uhr</p>  
+									</div>
+										<div class="col-xs-4">
+											<div id="cb"></div>
+												<script>
+												jQuery(document).ready(function( $ ) {
+												   $("#cb").googlePlaces({
+														placeId: 'ChIJd6V-agr3pkcRanxjYSvQuvA' //Find placeID @: https://developers.google.com/places/place-id
+													  , render: ['reviews']
+													  , min_rating: 4
+													  , max_rows:1
+												   });
+												});
+												</script>
+											
+										</div>
+									</div>
+									<div id="Chumumi">
+										<div class="col-xs-8">
+											<a href="http://www.chumumi.de/"> <h3 id="firmen" class="col-xs-5">Chumumi - Vietnam Indochina Cuisine</h3></a>
+											<p id="adr" class="col-xs-7">Adresse: Zschochersche Str. 50, 04229 Leipzig</p>
+											<a href="http://www.chumumi.de/"><img title="Zur Website" src="images/chumumi-rind-e1440872402956.jpg" alt="Bar Seventy" height="300rem" width="auto"> </a>
+										
+											<p > "Wer keine vietnamesische Mama hat, isst bei Mr Chu im Chumumi ♥." (Facebook von Chumumi)</p> 
+											<p class="col-xs-6"><a href="https://www.google.de/search?q=chumumi+-+vietnam+indochina+cuisine+leipzig&hl=de&site=webhp&source=lnms&sa=X&ved=0ahUKEwiivMGdqsfUAhXGbFAKHQYgAPYQ_AUICSgA&biw=944&bih=874&dpr=1#lrd=0x47a6f79fcfe63db5:0xed02272be0cbe431,1,">Alle Bewertungen ansehen</a></p>  
+											<img id="sterne" class="col-xs-4" src="images/4-5-sterne.png" height= "35rem" width="auto"/>
+											<p class="col-xs-12"> Öffnungszeiten: Montag bis Samstag 10.30 - 15.30 Uhr und 17.30 - 22.30 Uhr </p>  
+										</div>
+											
+										<div class="col-xs-4">
+											<div id="vn"></div>
+												<script>
+												jQuery(document).ready(function( $ ) {
+												   $("#vn").googlePlaces({
+														placeId: 'ChIJtT3mz5_3pkcRMeTL4CsnAu0' //Find placeID @: https://developers.google.com/places/place-id
+													  , render: ['reviews']
+													  , min_rating: 4
+													  , max_rows:1
+												   });
+												});
+												</script>
+											
+										</div>
+									</div>
+									
+									<div id="Stelzenhaus Restaurant">
+										<div class="col-xs-8">
+											<a href="http://www.stelzenhaus-restaurant.de/"> <h3 id="firmen" class="col-xs-5">Stelzenhaus Restaurant</h3> </a>
+											<p id="adr" class="col-xs-7">Adresse: Weißenfelser Str. 65H, 04229 Leipzig</p>
+											<a href="http://www.stelzenhaus-restaurant.de/"><img src="images/restaurant01-200x150.jpg" title="Zur Website" alt="Stelzenhaus" height="300rem" width="auto"></a>
+										
+											<p class="card-text"> "Im Fabrikgebäude an der Uferböschung in Hanglage wird raffinierte saisonale und internationale Küche serviert."</p>	 
+											<p class="col-xs-6"><a href="https://www.google.de/search?q=import+rating+from+google&oq=import+rating+from+google&aqs=chrome..69i57.9367j0j7&sourceid=chrome&ie=UTF-8#q=restaurants+plagwitz&rflfq=1&rlha=0&rllag=51328152,12331872,321&tbm=lcl&rldimm=17078255806350877745&tbs=lrf:!2m1!1e2!2m1!1e3!3sEAE,lf:1,lf_ui:9&lrd=0x47a6f7a063ffa37f:0x91c856a2b016d6a6,1,&rlfi=hd:;si:10504741387580659366;mv:!1m3!1d6271.8757727100665!2d12.33607535!3d51.326428199999995!2m3!1f0!2f0!3f0!3m2!1i544!2i483!4f13.1;tbs:lrf:!2m1!1e2!2m1!1e3!3sEAE,lf:1,lf_ui:9">Alle Bewertungen ansehen</a></p>  
+											<img id="sterne" class="col-xs-4" src="images/Stern 4.png" height= "35rem" width="auto"/>
+											<p class="col-xs-12"> Öffnungszeiten: Montag - Samstag 11.00 - 1.00 Uhr Sonntag 9.00 - 1.00 Uhr</p>  
+										</div>
+										<div class="col-xs-4">
+											<div id="sh"></div>
+												<script>
+												jQuery(document).ready(function( $ ) {
+												   $("#sh").googlePlaces({
+														placeId: 'ChIJf6P_Y6D3pkcRptYWsKJWyJE' //Find placeID @: https://developers.google.com/places/place-id
+													  , render: ['reviews']
+													  , min_rating: 4
+													  , max_rows:1
+												   });
+												});
+												</script>
+											
+										</div>
+									</div>
+									<div id="KAISERBAD – Café. Bar. Restaurant.">
+										<div class="col-xs-8">
+											<a href="http://www.kaiserbad-leipzig.de/"> <h3 id="firmen" class="col-xs-5">KAISERBAD</h3> </a>
+											<p id="adr" class="col-xs-7">Adresse: Karl-Heine-Straße 93, 04229 Leipzig</p>
+											<a href="http://www.kaiserbad-leipzig.de/"><img src="images/sw025220.jpg" title="Zur Website" alt="KAISERBAD – Café. Bar. Restaurant." height="300rem" width="auto"></a>
+										
+											<p class="card-text">"Café. Bar. Restaurant."</p>	 
+											<p class="col-xs-6"><a href="https://www.google.de/search?q=import+rating+from+google&oq=import+rating+from+google&aqs=chrome..69i57.9367j0j7&sourceid=chrome&ie=UTF-8#q=restaurants+plagwitz&rflfq=1&rlha=0&rllag=51328152,12331872,321&tbm=lcl&rldimm=17078255806350877745&tbs=lrf:!2m1!1e2!2m1!1e3!3sEAE,lf:1,lf_ui:9&lrd=0x47a6f7a05f1f5d23:0x8e0a53df4528fa1f,1,&rlfi=hd:;si:10235085321555999263;mv:!1m3!1d6271.8757727100665!2d12.33607535!3d51.326428199999995!2m3!1f0!2f0!3f0!3m2!1i544!2i483!4f13.1;tbs:lrf:!2m1!1e2!2m1!1e3!3sEAE,lf:1,lf_ui:9">Alle Bewertungen ansehen</a></p>  
+											<img id="sterne" class="col-xs-4" src="images/Stern 4.png" height= "35rem" width="auto"/>
+											<p class="col-xs-12"> Öffnungszeiten: täglich ab 09.00 Uhr (scheinbar bis open end)</p>  
+									</div>
+										<div class="col-xs-4">
+											<div id="kb"></div>
+												<script>
+												jQuery(document).ready(function( $ ) {
+												   $("#kb").googlePlaces({
+														placeId: 'ChIJI10fX6D3pkcRH_ooRd9TCo4' //Find placeID @: https://developers.google.com/places/place-id
+													  , render: ['reviews']
+													  , min_rating: 4
+													  , max_rows:1
+												   });
+												});
+												</script>
+											
+										</div>
+									</div>
+										<div id="Prellbock das Restaurant">
+										<div class="col-xs-8">
+											<a href="http://www.prellbock-leipzig-online.de/"> <h3 id="firmen" class="col-xs-9">Prellbock das Restaurant</h3> </a>
+											<img id="sterne" class="col-xs-3" src="images/Stern 4.png" height= "35rem" width="auto"/>
+											<a href="http://www.prellbock-leipzig-online.de/"><img src="images/151-1.jpg" title="Zur Website" alt="Prellbock" height="300rem" width="auto"></a>
+										
+											<p class="card-text"> "Frühstück, Wraps oder Schnitzel in stimmungsvollem Lokal auf 2 Etagen und im Hof einer ehemaligen Garnfabrik."</p>	 
+											<p id="adr">
+												<u>Adresse:</u> Nonnenstraße 42, 04229 Leipzig</br>	
+												<u>Telefon:</u> 0341 4791784
+											</p>
+											<p id="adr">
+											<u>Öffnungszeiten:</u></br> Montag bis Freitag 11.00 - 00.00 Uhr </br>
+												Sa/So 10.00 - 00.00 Uhr
+												</p>
+											</div>
+										
+										<div class="col-xs-4">
+											<div id="pb2"></div>
+												<script>
+												jQuery(document).ready(function( $ ) {
+												   $("#pb2").googlePlaces({
+														placeId: 'ChIJyx_MAHb3pkcRbBROEkhbMTg' //Find placeID @: https://developers.google.com/places/place-id
+													  , render: ['reviews']
+													  , min_rating: 4
+													  , max_rows:1
+												   });
+												});
+												</script>
+											<p ><a href="https://www.google.de/search?q=prellbock+leipzig&oq=prell&aqs=chrome.3.69i57j69i60j0l3j35i39.7631j0j4&sourceid=chrome&ie=UTF-8#lrd=0x47a6f77600cc1fcb:0x38315b48124e146c,1,">Alle Bewertungen ansehen</a></p>  
+										
+										</div>
+									</div>
+											<div id="Chinabrenner">
+										<div class="col-xs-8">
+											<a href="http://www.chinabrenner.de/"> <h3 id="firmen" class="col-xs-5">Chinabrenner</h3> </a>
+											<p id="adr" class="col-xs-7">Adresse: Gießerstraße 18, 04229 Leipzig</p>
+											<a href="http://www.chinabrenner.de/"><img src="images/Blog-Chinabrenner-Raum.jpg" title="Zur Website" alt="Chinabrenner" height="300rem" width="auto"></a>
+										
+											<p class="card-text"> "Klassische Gerichte aus der chinesischen Provinz Sichuan im quirligen, an eine Garküche angelehnten Ambiente."</p>	 
+											<p class="col-xs-6"><a href="https://www.google.de/search?q=import+rating+from+google&oq=import+rating+from+google&aqs=chrome..69i57.9367j0j7&sourceid=chrome&ie=UTF-8#q=restaurants+plagwitz&rflfq=1&rlha=0&rllag=51328152,12331872,321&tbm=lcl&rldimm=17078255806350877745&tbs=lrf:!2m1!1e2!2m1!1e3!3sEAE,lf:1,lf_ui:9&lrd=0x47a6f70a6a7ea577:0xf0bad02b61637c6a,1,&rlfi=hd:;si:17346405799506967658;mv:!1m3!1d6271.8757727100665!2d12.33607535!3d51.326428199999995!2m3!1f0!2f0!3f0!3m2!1i544!2i483!4f13.1;tbs:lrf:!2m1!1e2!2m1!1e3!3sEAE,lf:1,lf_ui:9">Alle Bewertungen ansehen</a></p>  
+											<img id="sterne" class="col-xs-4" src="images/Stern 4.png" height= "35rem" width="auto"/>
+											<p class="col-xs-12"> Öffnungszeiten: Mo 12.00 - 15.00 Uhr, Di/Do/Fr 12.00 - 23.00 Uhr, Sa 18.00 - 23.00 Uhr</p>  
+										</div>
+										<div class="col-xs-4">
+											<div id="cb"></div>
+												<script>
+												jQuery(document).ready(function( $ ) {
+												   $("#cb").googlePlaces({
+														placeId: 'ChIJd6V-agr3pkcRanxjYSvQuvA' //Find placeID @: https://developers.google.com/places/place-id
+													  , render: ['reviews']
+													  , min_rating: 4
+													  , max_rows:1
+												   });
+												});
+												</script>
+											
+											</div>
+										</div>
+								
+									</div>
+								</article>
+							
+							<!-- Imbiss -->
+							<article id="Imbiss">
+								<h2 class="major">Imbiss</h2>
+									<div class="row-fluid">
+									<div id="Vleischerei">
+										<div class="col-xs-8">
+											<a href="http://vleischerei.de/"> <h3 id="firmen" class="col-xs-9">Vleischerei</h3> </a>
+											<img id="sterne" class="col-xs-3" src="images/Stern 4.png" height= "35rem" width="auto"/>
+											<a class="imgcon" href="http://vleischerei.de/"><img src="images/IMG_20110916_153041.png" title="Zur Website" alt="Vleischerei" height="300rem" width="auto"></a>
+										
+											<p id="bildunterschrift" class="col-xs-12"> "Fast-Food-Lokal mit Vintage-Einrichtung und Altbaucharme, das vegane Döner, Bratwürste und Burger anbietet."</p>	 
+									</div>
+										
+										<div class="col-xs-4">
+											<div id="v"></div>
+												<script>
+												jQuery(document).ready(function( $ ) {
+												   $("#v").googlePlaces({
+														placeId: 'ChIJ4ckczaH3pkcR7TMleF-iz-o' //Find placeID @: https://developers.google.com/places/place-id
+													  , render: ['reviews']
+													  , min_rating: 4
+													  , max_rows:1
+												   });
+												});
+												</script>
+										</div>
+										<p class="col-xs-4"><a href="https://www.google.de/search?q=imbiss+plagwitz&oq=imbiss+plagwitz&aqs=chrome..69i57j69i60j0l2.3840j0j4&sourceid=chrome&ie=UTF-8#q=imbiss+plagwitz&rflfq=1&rlha=0&rllag=51330378,12337546,222&tbm=lcl&rldimm=932134273352779399&tbs=lrf:!2m1!1e2!2m1!1e3!3sEAE,lf:1,lf_ui:9&lrd=0x47a6f79ed8f096af:0xcef9b2ed628c687,1,">Alle Bewertungen ansehen</a></p>  
+										<p id="adr" class="col-xs-8">
+											<u>Adresse:</u> Zschochersche Str. 23, 04229 Leipzig</br>	
+											<u>Telefon:</u> </br>
+											<u><a href="http://vleischerei.de/speisekarte/" >Speisekarte</a></u>
+										</p>
+										<p id="adr" class="col-xs-4">
+											<u>Öffnungszeiten:</u></br> So - Do 12.00 - 23.00 Uhr <br> Fr/Sa 12.00 - 00.00 Uhr</p>
+									</div>
+									<div id="Noch Besser Leben">
+										<div class="col-xs-8">
+											<a href="http://www.nochbesserleben.com/"> <h3 id="firmen" class="col-xs-9">Noch Besser Leben</h3> </a>
+											<img id="sterne" class="col-xs-3" src="images/Stern 4.png" height= "35rem" width="auto"/>
+											<a class="imgcon" href="http://www.nochbesserleben.com/"><img src="images/noch_besser_leben.jpg" title="Zur Website" alt="Dr. Seltsam" height="300rem" width="auto"></a>
+										
+											<p  id="bildunterschrift" class="col-xs-12">"Die Kneipe ist eine Institution und bietet Fingerfood, Biere sowie Kulturveranstaltungen und sonntags Tatort."</p>	 
+										</div>
+										
+										<div class="col-xs-4">
+											<div id="nbl"></div>
+												<script>
+												jQuery(document).ready(function( $ ) {
+												   $("#nbl").googlePlaces({
+														placeId: 'ChIJG8T5zKH3pkcRoe89C5j4jgE' //Find placeID @: https://developers.google.com/places/place-id
+													  , render: ['reviews']
+													  , min_rating: 4
+													  , max_rows:1
+												   });
+												});
+												</script>
+										</div>
+										<p class="col-xs-4"><a href="https://www.google.de/search?q=bars+plagwitz&oq=bars+plagwitz&aqs=chrome..69i57j69i60l3j0.4336j0j7&sourceid=chrome&ie=UTF-8#q=bars+plagwitz&rflfq=1&rlha=0&rllag=51328097,12332173,337&tbm=lcl&rldimm=16919920855975539693&tbs=lrf:!2m1!1e2!2m1!1e3!3sEAE,lf:1,lf_ui:9&lrd=0x47a6f7a1cd1cc9e1:0xeacfa25f782533ed,1,">Alle Bewertungen ansehen</a></p>  
+										<p id="adr" class="col-xs-8">
+											<u>Adresse:</u> Merseburger Str. 25, 04229 Leipzig</br>	
+											<u>Telefon:</u> 0341 9757330
+										</p>
+										<p id="adr" class="col-xs-4">
+											<u>Öffnungszeiten:</u></br>  Mo - So ab 16.30 Uhr </p>
+									</div>
+									<div id="elipamanoke">
+										<div class="col-xs-8">
+											<a href="http://www.elipamanoke.de/"> <h3 id="firmen" class="col-xs-9">elipamanoke</h3> </a>
+											<img id="sterne" class="col-xs-3" src="images/Stern 4.png" height= "35rem" width="auto"/>
+											<a class="imgcon" href="http://www.elipamanoke.de/"><img src="images/elicontrol_with_dj_hell_-_elipamanoke-elipamanoke-0005.jpg" title="Zur Website" alt="elipamanoke" height="300rem" width="auto"></a>
+										
+											<p  id="bildunterschrift" class="col-xs-12"> "Die Kulturlounge bietet Live-Acts, Szenekunst und überwiegend elektronische Beats in industrieller Atmosphäre."</p>	 
+											<p id="adr" class="col-xs-12">
+												<u>Adresse:</u> Markranstädter Str. 4, 04229 Leipzig</br>	
+												<u>Telefon:</u>
+											</p>
+											<p id="adr" class="col-xs-12">
+											<u>Öffnungszeiten:</u></br> Fr und Sa 21.00 - 05.00 Uhr</p>
+								</div>
+										
+										<div class="col-xs-4">
+											<div id="eli"></div>
+												<script>
+												jQuery(document).ready(function( $ ) {
+												   $("#eli").googlePlaces({
+														placeId: 'ChIJMcbqfXX3pkcRaBJ-soqzLFk' //Find placeID @: https://developers.google.com/places/place-id
+													  , render: ['reviews']
+													  , min_rating: 4
+													  , max_rows:1
+												   });
+												});
+												</script>
+											<p ><a href="https://www.google.de/search?q=bars+plagwitz&oq=bars+plagwitz&aqs=chrome..69i57j69i60l3j0.4336j0j7&sourceid=chrome&ie=UTF-8#q=bars+plagwitz&rflfq=1&rlha=0&rllag=51328097,12332173,337&tbm=lcl&rldimm=16919920855975539693&tbs=lrf:!2m1!1e2!2m1!1e3!3sEAE,lf:1,lf_ui:9&lrd=0x47a6f7757deac631:0x592cb38ab27e1268,1,&rlfi=hd:;si:6425708176632320616;mv:!1m3!1d5765.312312152504!2d12.336470849999998!3d51.3275315!2m3!1f0!2f0!3f0!3m2!1i262!2i222!4f13.1;tbs:lrf:!2m1!1e2!2m1!1e3!3sEAE,lf:1,lf_ui:9">Alle Bewertungen ansehen</a></p>  
+										
+										</div>
+										
+									</div>
+										<div id="Tante Rosi ">
+										<div class="col-xs-8">
+											<a href="http://www.tanterosileipzig.de/"> <h3 id="firmen" class="col-xs-9">Tante Rosi </h3> </a>
+											<img id="sterne" class="col-xs-3" src="images/Stern 4.png" height= "35rem" width="auto"/>
+											<a class="imgcon" href="http://www.tanterosileipzig.de/"><img  src="images/Tanterosi_webseite_kommplett.png" title="Zur Website" alt="Tante Rosi" height="300px" width="auto"></a>
+										
+											<p  id="bildunterschrift" class="col-xs-12"> "Schritt für Schritt wächst Tante Rosi zur neuen Kneipe im Kiez.
+												</br>Wenn noch nicht alles perfekt ist, wir arbeiten daran!"</p>	 
+											<p id="adr" class="col-xs-12">
+												<u>Adresse:</u> Erich-Zeigner-Allee 49, 04229 Leipzig</br>	
+												<u>Telefon:</u> 0177 8796165
+											</p>
+											<p id="adr" class="col-xs-12">
+											<u>Öffnungszeiten:</u></br> Mo - Sa 18.00 - 02.00 Uhr </br>
+												So 18.00 - 00.00 Uhr
+												</p>
+										</div>
+										
+										<div class="col-xs-4">
+											<div id="rosi"></div>
+												<script>
+												jQuery(document).ready(function( $ ) {
+												   $("#rosi").googlePlaces({
+														placeId: 'ChIJrbHA7HX3pkcRkR-5Qa12ir8' //Find placeID @: https://developers.google.com/places/place-id
+													  , render: ['reviews']
+													  , min_rating: 4
+													  , max_rows:1
+												   });
+												});
+												</script>
+											<p ><a href="https://www.google.de/search?q=bars+plagwitz&oq=bars+plagwitz&aqs=chrome..69i57j69i60l3j0.4336j0j7&sourceid=chrome&ie=UTF-8#q=bars+plagwitz&rflfq=1&rlha=0&rllag=51328097,12332173,337&tbm=lcl&rldimm=16919920855975539693&tbs=lrf:!2m1!1e2!2m1!1e3!3sEAE,lf:1,lf_ui:9&lrd=0x47a6f775ecc0b1ad:0xbf8a76ad41b91f91,1,&rlfi=hd:;si:13801974494534377361;mv:!1m3!1d5765.312312152504!2d12.336470849999998!3d51.3275315!2m3!1f0!2f0!3f0!3m2!1i262!2i222!4f13.1;tbs:lrf:!2m1!1e2!2m1!1e3!3sEAE,lf:1,lf_ui:9">Alle Bewertungen ansehen</a></p>  
+										
+										</div>
+										</div>
+									<div id="Prellbock das Restaurant">
+										<div class="col-xs-8">
+											<a href="http://www.prellbock-leipzig-online.de/"> <h3 id="firmen" class="col-xs-9">Prellbock das Restaurant</h3> </a>
+											<img id="sterne" class="col-xs-3" src="images/Stern 4.png" height= "35rem" width="auto"/>
+											<a lass="imgcon" href="http://www.prellbock-leipzig-online.de/"><img src="images/151-1.jpg" title="Zur Website" alt="Prellbock" height="300rem" width="auto"></a>
+										
+											<p  id="bildunterschrift" class="col-xs-12"> "Frühstück, Wraps oder Schnitzel in stimmungsvollem Lokal auf 2 Etagen und im Hof einer ehemaligen Garnfabrik."</p>	 
+											<p id="adr" class="col-xs-12">
+												<u>Adresse:</u> Nonnenstraße 42, 04229 Leipzig</br>	
+												<u>Telefon:</u>0341 4791784
+											</p>
+											<p id="adr" class="col-xs-12">
+											<u>Öffnungszeiten:</u></br> Montag bis Freitag 11.00 - 00.00 Uhr </br>
+												Sa/So 10.00 - 00.00 Uhr
+												</p>
+											</div>
+										
+										<div class="col-xs-4">
+											<div id="pb"></div>
+												<script>
+												jQuery(document).ready(function( $ ) {
+												   $("#pb").googlePlaces({
+														placeId: 'ChIJyx_MAHb3pkcRbBROEkhbMTg' //Find placeID @: https://developers.google.com/places/place-id
+													  , render: ['reviews']
+													  , min_rating: 4
+													  , max_rows:1
+												   });
+												});
+												</script>
+											<p ><a href="https://www.google.de/search?q=prellbock+leipzig&oq=prell&aqs=chrome.3.69i57j69i60j0l3j35i39.7631j0j4&sourceid=chrome&ie=UTF-8#lrd=0x47a6f77600cc1fcb:0x38315b48124e146c,1,">Alle Bewertungen ansehen</a></p>  
+										
+										</div>
+									</div>
+										
+								</div>
+								</article>
+							
 							</article>
 
 						<!-- Elements -->
@@ -372,7 +867,7 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 
 				<!-- Footer -->
 					<footer id="footer">
-						<p class="copyright">&copy; Untitled. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
+						<p class="copyright">&copy; Website by us</p>
 					</footer>
 
 			</div>
